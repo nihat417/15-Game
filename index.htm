@@ -35,15 +35,15 @@
             }
 
             function cedvel() {
-                const n = 4
-                let kod = ''
-                let x = 0
+                const n = 4;
+                let kod = '';
+                let x = 0;
                 for (let i = 1; i <= n; i++) {
                     kod += '<tr>'
                         for (let j = 1; j <= n; j++) {
                             if(arr[x] == '') hole = [i, j]
-                            kod += `<td id="${i}${j}" onclick="swipe(${i}, ${j})">${arr[x]}</td>`
-                            x++
+                            kod += `<td id="${i}${j}" onclick="swipe(${i}, ${j})">${arr[x]}</td>`;
+                            x++;
                         }
                     kod += '</tr>'
                 }
